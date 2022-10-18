@@ -1,0 +1,173 @@
+body {
+    background-color: rgb(216, 202, 202);
+}
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 1440px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 200px;
+}
+.facebook {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 200px;
+    background-color: white;
+}
+.w-f-book {
+    display: none;
+    
+}
+.facebook:hover{
+    background-color: rgb(88, 173, 207);
+    transition: 0.5s ease-in-out;
+    animation-name: animat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 7;
+}
+.facebook:hover .w-f-book{
+    display: block;
+}
+.facebook:hover .f-book-img{
+    display:none ;
+}
+.twitter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 200px;
+    background-color: white;
+}
+.twitter:hover{
+    background-color: skyblue;
+    transition: 0.5s ease-in-out;
+}
+.twitter:hover .twitter-img{
+    display: none;
+}
+.twitter:hover .w-twitter-img{
+    display: flex;
+    animation-name: animat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 7;
+}
+.twitter-img {
+    display: flex;
+}
+.w-twitter-img {
+    display: none;
+}
+.google {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    box-sizing: border-box;
+    padding: 30px;
+    border-radius: 10px;
+    width: 200px;
+    background-color: white;
+}
+.google:hover{
+    background-color: rgb(177, 56, 56);
+    transition: 0.6s ease-in-out;
+}
+.google:hover .w-google-img {
+    display: flex;
+    animation-name: animat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 7;
+}
+.google:hover .google-img {
+    display: none;
+}
+.w-google-img {
+    display: none;
+}
+.brawser {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 200px;
+    background-color: white;
+}
+.brawser:hover {
+    background-color: rgb(247, 159, 188);
+    transition: 0.5s ease-in-out;
+}
+.brawser:hover .w-brawser-img{
+    display: flex;
+    animation-name: animat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 7;
+}
+.brawser:hover .browser-img{
+    display: none;
+}
+.w-brawser-img {
+    display: none;
+}
+.skype {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 30px;
+    border-radius: 10px;
+    box-sizing: border-box;
+    padding: 30px;
+    width: 200px;
+    background-color: white;
+}
+.skype:hover {
+    background-color: rgb(125, 209, 243)    ;
+    transition: 0.6s ease-in-out;
+}
+.skype:hover .transparent {
+    background-color: rgb(125, 209, 243);
+    transition: all 0.6s ease-in-out;
+    transform: translateX(100px);
+}
+.skype:hover .w-skype-img {
+    display: flex;
+    animation-name: animat;
+    animation-duration: 0.5s;
+    animation-iteration-count: 7;
+}
+.skype:hover .skype-img {
+    display: none;
+}
+.w-skype-img {
+    display: none;
+}
+.transparent {
+    z-index: 2;
+    width: 80px;
+    height: 80px;
+    transform: translateX(45deg);
+    background-color: rgb(125, 209, 243);
+}
+@keyframes animat{
+    0%{
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+    0%{
+        transform: scale(1);
+    }
+}
